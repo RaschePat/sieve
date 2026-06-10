@@ -1,0 +1,12 @@
+{"id": "sum-01", "kind": "요약", "content": "다음 글을 두 문장으로 요약해줘: 재생에너지는 태양광, 풍력, 수력 등 자연에서 지속적으로 공급되는 에너지원을 활용한다. 화석연료와 달리 온실가스 배출이 적어 기후변화 대응의 핵심 수단으로 주목받지만, 발전량이 날씨에 좌우되어 저장 기술이 함께 발전해야 한다."}
+{"id": "sum-02", "kind": "요약", "content": "이 회의록을 3줄로 정리해줘: 오늘 회의에서는 신규 결제 모듈의 출시 일정을 논의했다. 백엔드는 다음 주까지 API를 완성하고, 프론트는 그 다음 주에 통합 테스트를 시작한다. QA는 2주 후 회귀 테스트를 진행하며, 최종 배포는 이달 말로 잠정 확정했다. 다만 외부 PG사 연동 승인이 지연될 경우 일정이 밀릴 수 있다."}
+{"id": "trans-01", "kind": "번역", "content": "다음 문장을 영어로 번역해줘: 오늘 배포한 기능에서 간헐적으로 타임아웃이 발생하고 있어 원인을 조사 중입니다."}
+{"id": "trans-02", "kind": "번역", "content": "Translate to Korean: The cache invalidation logic runs before the database write completes, which causes stale reads under high concurrency."}
+{"id": "cls-01", "kind": "분류", "content": "다음 고객 문의를 [환불, 배송, 계정, 기타] 중 하나로 분류해줘: '주문한 지 일주일이 지났는데 아직 상품을 받지 못했어요. 송장 번호도 조회가 안 됩니다.'"}
+{"id": "cls-02", "kind": "분류", "content": "이 리뷰의 감정을 긍정/부정/중립 중 하나로 답해줘: '가격은 괜찮은데 배터리가 반나절도 못 가서 좀 아쉽네요.'"}
+{"id": "ext-01", "kind": "추출", "content": "다음 문장에서 회사명, 직책, 이메일을 JSON으로 추출해줘: 김민수 (주식회사 노바 CTO, minsu.kim@nova.co.kr) 님이 데모를 요청했습니다."}
+{"id": "fmt-01", "kind": "포맷변환", "content": "다음 항목들을 마크다운 표로 변환해줘: 사과 1200원 50개, 바나나 800원 120개, 포도 3500원 30개"}
+{"id": "review-01", "kind": "코드리뷰", "content": "이 파이썬 함수를 코드 리뷰해줘. 버그와 개선점을 알려줘:\n```python\ndef average(nums):\n    total = 0\n    for n in nums:\n        total += n\n    return total / len(nums)\n```"}
+{"id": "debug-01", "kind": "디버깅", "content": "이 코드에서 왜 IndexError가 나는지 원인과 수정 방법을 설명해줘:\n```python\nitems = [1, 2, 3]\nfor i in range(1, len(items) + 1):\n    print(items[i])\n```"}
+{"id": "design-01", "kind": "설계", "content": "초당 1만 건의 이벤트를 처리하면서 중복 없이 정확히 한 번만 집계해야 하는 실시간 카운터 시스템의 아키텍처를 설계해줘. 주요 컴포넌트와 트레이드오프를 설명해줘."}
+{"id": "impl-01", "kind": "코드생성", "content": "주어진 문자열이 유효한 IPv4 주소인지 검증하는 파이썬 함수를 작성해줘. 엣지 케이스도 처리하고 테스트도 포함해줘."}
