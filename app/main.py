@@ -1,4 +1,4 @@
-"""LLM 스마트 라우터 — OpenAI 호환 프록시 서버.
+"""SIEVE — OpenAI 호환 프록시 서버.
 
 기존 코드의 base URL만 이 서버로 바꾸면 단순 작업은 로컬 LLM(Ollama),
 복잡한 작업은 클라우드(Claude)로 자동 분배된다.
@@ -19,7 +19,7 @@ from . import config, db, judge, router
 from .providers import cloud, local
 from .providers.local import LocalModelError
 
-app = FastAPI(title="LLM Smart Router")
+app = FastAPI(title="SIEVE")
 
 
 class ChatRequest(BaseModel):
@@ -133,7 +133,7 @@ async def healthz():
 
 
 DASHBOARD_HTML = """<!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><title>LLM Smart Router</title>
+<html lang="ko"><head><meta charset="utf-8"><title>SIEVE</title>
 <style>
   body { font-family: -apple-system, sans-serif; max-width: 880px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; }
   h1 { font-size: 1.4rem; }
@@ -144,7 +144,7 @@ DASHBOARD_HTML = """<!doctype html>
   .highlight .value { color: #0a7d36; }
   footer { margin-top: 32px; font-size: .8rem; color: #999; }
 </style></head><body>
-<h1>LLM Smart Router — 비용 대시보드</h1>
+<h1>SIEVE — 비용 대시보드</h1>
 <div class="grid" id="grid"></div>
 <footer>10초마다 자동 갱신 · 데이터: /stats</footer>
 <script>

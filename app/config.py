@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 CLOUD_MODEL = os.getenv("CLOUD_MODEL", "claude-opus-4-8")
-JUDGE_MODEL = os.getenv("JUDGE_MODEL", "claude-opus-4-8")
+JUDGE_MODEL = os.getenv("JUDGE_MODEL", "claude-haiku-4-5")
 LOCAL_MODEL = os.getenv("LOCAL_MODEL", "Qwen2.5-7B-Instruct-4bit")
 
 # 로컬 LLM은 OpenAI 호환 엔드포인트로 호출 (oMLX, LM Studio, vLLM, Ollama /v1 등 호환)

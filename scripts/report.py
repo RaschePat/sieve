@@ -35,7 +35,7 @@ def main():
     out: list[str] = []
     w = out.append
 
-    w("# LLM Smart Router — 운영 리포트\n")
+    w("# SIEVE — 운영 리포트\n")
     if s["total_requests"] == 0:
         w("_아직 처리된 요청이 없습니다. 라우터로 요청을 보낸 뒤 다시 실행하세요._")
         print("\n".join(out))
